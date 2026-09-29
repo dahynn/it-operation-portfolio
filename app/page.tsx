@@ -1,6 +1,6 @@
 /* oxlint-disable next/no-img-element -- 원본 GIF 애니메이션과 고정 비율 포트폴리오 자산을 그대로 표시합니다. */
 import { PageSnap } from '../components/PageSnap';
-import { ArrowDown, CheckCircle2, Mail, UsersRound } from 'lucide-react';
+import { ArrowDown, CheckCircle2, Mail, UserRound, UsersRound } from 'lucide-react';
 import { ProjectCaseStudies } from '../components/ProjectCaseStudies';
 import { PersonalStrengths } from '../components/PersonalStrengths';
 import { SkillCriteria } from '../components/SkillCriteria';
@@ -107,7 +107,7 @@ export default function Home() {
           </section>
         </div>
         <div className="profile-details">
-          <h1 id="portfolio-title"><span className="cover-title-prefix">사용자의</span><span className="cover-title-top"><em>요구사항</em>부터</span><span className="cover-title-follow"><span className="cover-title-highlight"><em>운영 결과</em>까지</span> <em>확인하는 개발자</em></span></h1>
+          <h1 id="portfolio-title"><span>요구사항 <em>한 줄</em>부터</span><span className="cover-title-result">운영 결과의 <em>마지막 숫자</em>까지,</span><span><span className="cover-title-highlight"><em>끝까지 추적하는</em></span> <em>개발자</em></span></h1>
           <PersonalStrengths />
         </div>
         <BrandLogo />
@@ -138,8 +138,7 @@ export default function Home() {
               <p className="journey-date">{activity.date}</p>
               <div className="journey-copy">
                 <strong className={
-                  activity.education ? 'education-study'
-                    : activity.title === '동국대학교' ? 'dongguk-university'
+                  activity.title === '동국대학교' ? 'dongguk-university'
                     : activity.title === 'University of Lancashire' ? 'exchange-study'
                       : activity.title === '삼성청년SW·AI 아카데미 14기' ? 'ssafy-campus'
                         : undefined
@@ -231,7 +230,7 @@ export default function Home() {
                   <p>{project.summary}</p>
                   <div className="store-meta">
                     <span>{project.evidence.team}</span>
-                    <p className="store-contribution"><strong>MY ROLE</strong>{project.storeFocus.split(' · ').map(focus => <span key={focus}>{focus}</span>)}</p>
+                    <p className="store-contribution"><UserRound size={14} strokeWidth={1.9} aria-hidden="true" />{project.storeFocus.split(' · ').map(focus => <span key={focus}>{focus}</span>)}</p>
                   </div>
                 </div>
               </div>
