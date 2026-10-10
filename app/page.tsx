@@ -66,8 +66,8 @@ const skillGroups = [
   { category: 'Backend', items: [{ name: 'Java', level: 4, icon: '/assets/tech-icons/java.png' }, { name: 'Spring Boot', level: 4, icon: '/assets/tech-icons/spring.png' }] },
   { category: 'Frontend', items: [{ name: 'React', level: 4, icon: '/assets/tech-icons/react.svg' }, { name: 'Vue.js', level: 3, icon: 'https://cdn.simpleicons.org/vuedotjs/4FC08D' }, { name: 'Next.js', level: 2, icon: 'https://cdn.simpleicons.org/nextdotjs/343940' }, { name: 'TypeScript', level: 3, icon: '/assets/tech-icons/typescript.svg' }] },
   { category: 'Data', items: [{ name: 'SQL', level: 3, icon: '/assets/tech-icons/sql.svg' }, { name: 'PostgreSQL', level: 3, icon: '/assets/tech-icons/postgresql.svg' }, { name: 'Redis', level: 4, icon: '/assets/tech-icons/redis.svg' }] },
-  { category: 'Infrastructure', items: [{ name: 'AWS', level: 2, icon: 'https://api.iconify.design/logos/aws.svg' }, { name: 'Docker', level: 2, icon: 'https://cdn.simpleicons.org/docker/2496ED' }] },
-  { category: 'Tools', items: [{ name: 'Jira', level: 2, icon: 'https://cdn.simpleicons.org/jira/0052CC' }, { name: 'Notion', level: 3, icon: 'https://cdn.simpleicons.org/notion/343940' }, { name: 'Harness', level: 2, icon: 'https://api.iconify.design/logos/harness.svg' }] },
+  { category: 'Infrastructure', items: [{ name: 'AWS', level: 2, icon: 'https://api.iconify.design/logos/aws.svg' }, { name: 'Docker', level: 3, icon: 'https://cdn.simpleicons.org/docker/2496ED' }] },
+  { category: 'Tools', items: [{ name: 'Jira', level: 3, icon: 'https://cdn.simpleicons.org/jira/0052CC' }, { name: 'Notion', level: 4, icon: 'https://cdn.simpleicons.org/notion/343940' }, { name: 'Harness', level: 2, icon: 'https://api.iconify.design/logos/harness.svg' }, { name: 'Figma', level: 4, icon: '/assets/tech-icons/figma.svg' }] },
 ];
 const skillLevelLabels = ['기초', '초급', '중급', '고급', '전문가'];
 
@@ -162,7 +162,7 @@ export default function Home() {
         <header className="profile-record-heading">
           <p className="eyebrow section-kicker">Profile record</p>
           <h2 id="profile-record-title">사용자의 요청을 기능으로 옮기고, 운영 결과까지 확인했습니다.</h2>
-          <p>React로 사용자가 이해하기 쉬운 화면을 만들고 Spring Boot로 요구사항을 API와 기능 개선으로 연결했습니다. SQL 조회 결과를 원본과 대조하고, Redis와 외부 연동에서 요청이 겹치거나 응답이 끊기는 상황을 재현해 상태가 복구되는지 확인했습니다. 한국콜마에서도 임직원과 고객사의 요청을 정확한 개선 과제로 바꾸고, 시스템과 데이터를 믿을 수 있게 운영하고 싶습니다.</p>
+          <p>React로 사용자가 이해하기 쉬운 화면을 만들고 Spring Boot로 요구사항을 API와 기능 개선으로 연결했습니다. SQL 조회 결과를 원본과 대조하고, Redis와 외부 연동에서 요청이 겹치거나 응답이 끊기는 상황을 재현해 상태가 복구되는지 확인했습니다.<br />한국콜마에서도 임직원과 고객사의 요청을 정확한 개선 과제로 바꾸고, 시스템과 데이터를 믿을 수 있게 운영하고 싶습니다.</p>
         </header>
         <div className="profile-record-grid">
           <div className="profile-record-history">
